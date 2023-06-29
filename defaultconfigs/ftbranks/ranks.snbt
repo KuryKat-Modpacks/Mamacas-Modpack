@@ -1,0 +1,42 @@
+{
+	member: {
+		name: "Member"
+		power: 1
+		condition: "always_active"
+	}
+	veteran: {
+		name: "Veteran"
+		power: 25
+		condition: {
+			type: "playtime"
+			time: 4
+			time_unit: "weeks"
+		}
+	}
+	vip: {
+		name: "VIP"
+		power: 50
+		ftbranks.name_format: "&a[VIP] &r{name}"
+	}
+	mvp: {
+		name: "MVP"
+		power: 100
+		ftbranks.name_format: "&b[MVP] &r{name}"
+	}
+	champion: {
+		name: "Champion"
+		power: 150
+		ftbranks.name_format: "[&f&l🏆 &r&5&k|&r &6CHAMPION &r&5&k|&r &f&l🏆&r] &r{name}"
+	}
+	killer: {
+		name: "Killer"
+		power: 200
+		ftbranks.name_format: "[&f&l⚔︎ &r&3&k|&r &c&oKILLER &r&3&k|&r &f&l⚔︎&r] &r{name}"
+	}
+	admin: {
+		name: "Admin"
+		power: 1000
+		condition: "op"
+		ftbranks.name_format: "&4&l[ADMIN] &r{name}"
+	}
+}
