@@ -1,4 +1,4 @@
-## Mamacas Modpack - 1.1.0
+## os-chans - 1.1.0
 
   * [abnormals_delight-1.19.2-4.0.2.jar](https://www.curseforge.com/minecraft/mc-mods/abnormals-delight/files/4415502) (by [TeamAbnormals](https://www.curseforge.com/members/TeamAbnormals/projects))
   * [additionallanterns-1.0.5-forge-mc1.19.jar](https://www.curseforge.com/minecraft/mc-mods/additional-lanterns/files/4591437) (by [SuperMartijn642](https://www.curseforge.com/members/SuperMartijn642/projects))
@@ -185,7 +185,6 @@
   * [macawsroofsbop-1.19.2-1.4.jar](https://www.curseforge.com/minecraft/mc-mods/macaws-roofs-biomes-o-plenty/files/4473785) (by [Samlegamer_](https://www.curseforge.com/members/Samlegamer_/projects))
   * [mcw-trapdoors-1.1.1-mc1.19.2forge.jar](https://www.curseforge.com/minecraft/mc-mods/macaws-trapdoors/files/4608580) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
   * [mcw-windows-2.1.1-mc1.19.2forge.jar](https://www.curseforge.com/minecraft/mc-mods/macaws-windows/files/4203423) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
-  * [rubidium_extras-1.19.2_v1.3.2.jar](https://www.curseforge.com/minecraft/mc-mods/magnesium-extras/files/4285411) (by [Anthxny](https://www.curseforge.com/members/Anthxny/projects))
   * [MaxHealthFix-Forge-1.19.2-8.0.1.jar](https://www.curseforge.com/minecraft/mc-mods/max-health-fix/files/3943055) (by [DarkhaxDev](https://www.curseforge.com/members/DarkhaxDev/projects))
   * [mcjtylib-1.19-7.2.5.jar](https://www.curseforge.com/minecraft/mc-mods/mcjtylib/files/4501791) (by [McJty](https://www.curseforge.com/members/McJty/projects))
   * [Mekanism-1.19.2-10.3.8.477.jar](https://www.curseforge.com/minecraft/mc-mods/mekanism/files/4385637) (by [bradyaidanc](https://www.curseforge.com/members/bradyaidanc/projects))
