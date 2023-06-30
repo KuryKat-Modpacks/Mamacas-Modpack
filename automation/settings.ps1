@@ -87,6 +87,7 @@ $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @(
 )
 
 $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
+    "spark/activity.json",
 	"contentcreatorintegration/default/constants.json",
 	"Mekanism/tools-client.toml"
 	"morered-client.toml",
