@@ -1,3 +1,24 @@
+### Mamacas Modpack v1.2.0
+
+🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/KuryKat/Mamacas-Modpack/blob/master/changelogs/changelog_mods_1.2.0.md) | [📋 Modlist](https://github.com/KuryKat/Mamacas-Modpack/blob/master/changelogs/modlist_1.2.0.md)
+
+This version removed a few mods that weren't working (they were prior disabled on dev enviroment) because of incompatibilities. Hopefully if they update and are compatible we can add them back!
+
+### 🐛 Fixed Bugs
+
+-   Fix and remove a few Incompatible mods
+
+### ❌ Removed Mods
+
+-   [Create Big Cannons](https://www.curseforge.com/minecraft/mc-mods/create-big-cannons) (by [rbasamoyai](https://www.curseforge.com/members/rbasamoyai/projects))
+-   [Create: Connected Block Textures](https://www.curseforge.com/minecraft/mc-mods/create-connected-block-textures) (by [stevreng](https://www.curseforge.com/members/stevreng/projects))
+-   [Create: Extended Cogwheels ](https://www.curseforge.com/minecraft/mc-mods/create-extended-cogs) (by [Rabbitminers](https://www.curseforge.com/members/Rabbitminers/projects))
+-   [Create: Extended Flywheels](https://www.curseforge.com/minecraft/mc-mods/create-extended-flywheels) (by [Rabbitminers](https://www.curseforge.com/members/Rabbitminers/projects))
+-   [Magnesium/Rubidium Dynamic Lights](https://www.curseforge.com/minecraft/mc-mods/dynamiclights-reforged) (by [Anthxny](https://www.curseforge.com/members/Anthxny/projects))
+-   [Magnesium/Rubidium Extras](https://www.curseforge.com/minecraft/mc-mods/magnesium-extras) (by [Anthxny](https://www.curseforge.com/members/Anthxny/projects))
+
+---
+
 ### Mamacas Modpack v1.1.0
 
 🚀 Forge-1.19.2-43.2.14 | [📜 Mod Updates](https://github.com/KuryKat/Mamacas-Modpack/blob/master/changelogs/changelog_mods_1.1.0.md) | [📋 Modlist](https://github.com/KuryKat/Mamacas-Modpack/blob/master/changelogs/modlist_1.1.0.md)
