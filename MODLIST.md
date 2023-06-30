@@ -1,4 +1,4 @@
-## Mamacas Modpack - 1.2.0
+## os-chans - 1.2.0
 
   * [abnormals_delight-1.19.2-4.0.2.jar](https://www.curseforge.com/minecraft/mc-mods/abnormals-delight/files/4415502) (by [TeamAbnormals](https://www.curseforge.com/members/TeamAbnormals/projects))
   * [additionallanterns-1.0.5-forge-mc1.19.jar](https://www.curseforge.com/minecraft/mc-mods/additional-lanterns/files/4591437) (by [SuperMartijn642](https://www.curseforge.com/members/SuperMartijn642/projects))
