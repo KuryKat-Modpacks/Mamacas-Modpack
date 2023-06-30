@@ -82,7 +82,6 @@ realms_persistence.json
 reauth.toml
 secrets.ps1
 server-install.sh
-server-setup-config.yaml
 server.properties
 servers.dat
 servers.dat_old
@@ -90,8 +89,6 @@ settings.cfg
 soundsMuffled.dat
 start-automated-server.bat
 start-automated-server.sh
-start-server.bat
-start-server.sh
 stop-java-detection.txt
 TrashSlotSaveState.json
 TwitchExportBuilder.exe
