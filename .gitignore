@@ -1,4 +1,5 @@
 # Folders/wildcards
+/.vscode/
 *.dll
 **/*.exe
 **/*.log
@@ -99,6 +100,7 @@ usernamecache.json
 whitelist.json
 XaeroWaypoints/
 XaeroWorldMap/
+probejs.json
 
 # Client Configs
 config/abnormals_core-client.toml
