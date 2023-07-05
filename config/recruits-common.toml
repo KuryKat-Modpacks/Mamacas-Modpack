@@ -1,7 +1,7 @@
 #
 ###Version, do not change!##
 #Range: > 0
-Version = 21
+Version = 22
 
 #Monster and Pillager Config:
 [Hostiles]
@@ -154,15 +154,15 @@ Version = 21
 	#
 	#The interval in minutes a Pillager Patrol can spawn.
 	#	(takes effect after restart)
-	#	default: 15
+	#	default: 45
 	#Range: 1 ~ 60
-	PillagerPatrolSpawnInterval = 15
+	PillagerPatrolSpawnInterval = 45
 	#
 	#The interval in minutes a Recruit Patrol and Caravan can spawn.
 	#	(takes effect after restart)
-	#	default: 15
+	#	default: 30
 	#Range: 1 ~ 60
-	RecruitPatrolSpawnInterval = 15
+	RecruitPatrolSpawnInterval = 30
 	#
 	#----Should modded Pillager Patrols spawn in the world?----
 	#	(takes effect after restart)

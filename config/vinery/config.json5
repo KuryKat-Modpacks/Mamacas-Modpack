@@ -11,6 +11,6 @@ cf:
 	*/
 	"wine_trader_chance": 50,
 	// How long should a year be (in days).
-	"year_length_in_days": 16,
+	"year_length_in_days": 30,
 	"enable_wine_maker_set_bonus": true
 }

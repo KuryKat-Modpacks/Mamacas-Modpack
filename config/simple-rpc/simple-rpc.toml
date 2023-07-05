@@ -1,0 +1,216 @@
+[general]
+	#The Application ID of the Discord App to use. Replace this with your client id from the discord dashboard to change the name of the app
+	applicationID = 1125711718509711452
+	#Enable/Disable the mod
+	enabled = true
+	#Enable/Disable debugging mode. WARNING: MAY CAUSE LOG SPAM!
+	debugging = false
+	#Enable/Disable the in game config screen. ONLY AVAILABLE WHEN CLOTH CONFIG IS INSTALLED!
+	configScreen = false
+	#Display the Icon and Pack Name in place of LargeImage from compatible launchers. DOES NOT WORK WITH CUSTOM APPS! ONLY THE DEFAULT ONE!
+	launcherIntegration = false
+	#Internal Version Number. NO TOUCHY!
+	version = 18
+
+[init]
+	#Enable/Disable the Game Loading Event
+	enabled = true
+	#The first line of text under the app name
+	description = ""
+	#The second line of text under the app name
+	state = "Game Starting..."
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%formattedVersion%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ["loading"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = ""
+	#The buttons to display on Discord 
+	buttons = []
+
+[main_menu]
+	#Enable/Disable the Main Menu Event
+	enabled = true
+	#The first line of text under the app name
+	description = ""
+	#The second line of text under the app name
+	state = "Main Menu"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%formattedVersion%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = []
+	#The text that gets displayed when the small image is hovered
+	smallImageText = ""
+	#The buttons to display on Discord 
+	buttons = []
+
+[server_list]
+	#Enable/Disable the Server List Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Searching for friends"
+	#The second line of text under the app name
+	state = "Multiplayer Menu"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%formattedVersion%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = []
+	#The text that gets displayed when the small image is hovered
+	smallImageText = ""
+	#The buttons to display on Discord 
+	buttons = []
+
+[realms_list]
+	#Enable/Disable the Realms Screen Event
+	enabled = false
+	#The first line of text under the app name
+	description = "Looking for a Realm"
+	#The second line of text under the app name
+	state = "Realms Menu"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%formattedVersion%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = []
+	#The text that gets displayed when the small image is hovered
+	smallImageText = ""
+	#The buttons to display on Discord 
+	buttons = []
+
+[join_game]
+	#Enable/Disable the Join Game Event
+	enabled = true
+	#The first line of text under the app name
+	description = ""
+	#The second line of text under the app name
+	state = "Joining Game"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%formattedVersion%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ["loading"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = ""
+	#The buttons to display on Discord 
+	buttons = []
+
+[single_player]
+	#Enable/Disable the Single Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "In %world%"
+	#The second line of text under the app name
+	state = "Singleplayer"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%formattedVersion%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ["mclogo"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	#The buttons to display on Discord 
+	buttons = []
+
+[multi_player]
+	#Enable/Disable the Multi Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "In %servername% (%serverip%)"
+	#The second line of text under the app name
+	state = "Multiplayer with %players%/%maxplayers% players"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%formattedVersion%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ["mclogo"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	#The buttons to display on Discord 
+	buttons = []
+
+[realms]
+	#Enable/Disable the Realms Game Event
+	enabled = false
+	#The first line of text under the app name
+	description = "Playing on %realmname%"
+	#The second line of text under the app name
+	state = "Playing on a Realm"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%formattedVersion%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ["mclogo"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%realmdescription%"
+	#The buttons to display on Discord 
+	buttons = []
+
+[generic]
+	#The first line of text under the app name
+	description = ""
+	#The second line of text under the app name
+	state = ""
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%formattedVersion%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = []
+	#The text that gets displayed when the small image is hovered
+	smallImageText = ""
+	#The buttons to display on Discord 
+	buttons = []
+
+[custom]
+	#Must these variables be parsed along with other variables
+	enabled = true
+	#Your custom variables to add
+    [[custom.variables]]
+        name = "formattedVersion"
+        value = "Minecraft %mcver%"
+
+[dimension_overrides]
+	enabled = true
+
+	[[dimension_overrides.dimensions]]
+		name = "overworld"
+		description = "In The Overworld"
+		state = ""
+		largeImageKey = []
+		largeImageText = ""
+		smallImageKey = ["overworld"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_nether"
+		description = "In The Nether"
+		state = ""
+		largeImageKey = []
+		largeImageText = ""
+		smallImageKey = ["nether"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_end"
+		description = "In The End"
+		state = ""
+		largeImageKey = []
+		largeImageText = ""
+		smallImageKey = ["end"]
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+
