@@ -198,7 +198,7 @@ Version = 22
 	#----Should Recruits instead of Iron Golems spawn in Villages ----
 	#	(takes effect after restart)
 	#	default: true
-	OverrideIronGolemSpawn = true
+	OverrideIronGolemSpawn = false
 
 #Recruit Teams Config:
 [Teams]
