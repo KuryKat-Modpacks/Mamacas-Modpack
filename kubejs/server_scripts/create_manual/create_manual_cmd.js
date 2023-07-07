@@ -1,5 +1,5 @@
 ServerEvents.commandRegistry(event => {
-    const {commands: Commands, arguments: Arguments} = event;
+    const { commands: Commands, arguments: Arguments } = event;
     event.register(
         Commands.literal("create_manual_config")
             .then(Commands.literal("page_type")
