@@ -445,6 +445,8 @@ switch ($mode) {
     "modlist" {
         New-ClientFiles
         Update-Modlist
+        # New-Changelog
+        # Set-Location $startLocation
         break
     }
 }
