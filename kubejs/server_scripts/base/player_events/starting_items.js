@@ -38,8 +38,8 @@ PlayerEvents.loggedIn((event) => {
           botania: {
             0: {
               Count: 1,
-              id: "botania:lexicon"
-            }
+              id: "botania:lexicon",
+            },
           },
           create: {
             0: {
