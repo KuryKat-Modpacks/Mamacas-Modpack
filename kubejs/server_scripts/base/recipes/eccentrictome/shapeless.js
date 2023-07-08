@@ -26,6 +26,12 @@ ServerEvents.recipes((event) => {
               id: "create:manual",
             },
           },
+          create: {
+            0: {
+              Count: 1,
+              id: "create:manual",
+            },
+          },
           engineersdecor: {
             0: {
               Count: 1,

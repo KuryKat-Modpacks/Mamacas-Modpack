@@ -8,7 +8,7 @@ PlayerEvents.loggedIn((event) => {
         Item.of("minecraft:stone_sword", {
           Damage: 0,
           display: {
-            Name: '{"text":"Sturdy Stone Dagger","color":"dark_green"}',
+            Name: '{"text":"Sturdy Stone Sword","color":"dark_green"}',
           },
         }),
         baseEnchantLevel,
@@ -34,6 +34,12 @@ PlayerEvents.loggedIn((event) => {
               Count: 1,
               id: "ars_nouveau:worn_notebook",
             },
+          },
+          botania: {
+            0: {
+              Count: 1,
+              id: "botania:lexicon"
+            }
           },
           create: {
             0: {
