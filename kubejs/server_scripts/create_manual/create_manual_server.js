@@ -28,7 +28,10 @@ function set_page_type(page_type) {
 }
 
 let players_create_manual_right_click = [];
-
+/**
+ * 
+ * @param {Internal.ItemClickedEventJS | Internal.BlockRightClickedEventJS} event 
+ */
 function create_manual_right_click(event) {
   if (event.player.mainHandItem == "create:manual") {
     event.cancel();
@@ -43,11 +46,11 @@ function create_manual_right_click(event) {
         );
     });
 
-    let ray = event.player.rayTrace(64);
+    let ray = event.player.rayTrace(4);
     let ponder = JsonIO.read("kubejs/create_manual/ponder.json");
     if (ponder == null) {
       event.player.tell(
-        'The file "kubejs/create_manual/ponder.json" does not exist on the server side, move it from the client to the server files so that create_manual works properly.',
+        Text.red('The file "kubejs/create_manual/ponder.json" does not exist on the server side, move it from the client to the server files so that create_manual works properly.'),
       );
       event.player.sendData("openPonderTagIndexScreen", {});
       return;
@@ -55,10 +58,10 @@ function create_manual_right_click(event) {
     ponder = ponder.get("ponder");
     if (!event.player.stages.has("notified_about_create_manual_options")) {
       event.player.stages.add("notified_about_create_manual_options");
-      event.player.tell("Shift + scroll if you want to change screen mode!");
+      event.player.tell("Shift + Scroll if you want to change screen mode!");
     }
     if (ray.block !== null && !event.player.isCrouching()) {
-      let ponders = [];
+        let ponders = [];
       if (ray.block.id.includes("andesite_encased")) {
         ponders.push("create:andesite_casing");
       } else if (ray.block.id.includes("brass_encased")) {
@@ -81,6 +84,8 @@ function create_manual_right_click(event) {
         ponders = ponders.filter((el) => el !== "create:gearbox");
       }
 
+      console.log(ponders)
+      
       if (ponders.length == 1) {
         event.server.runCommandSilent(
           `/execute as ${event.entity.uuid} run create ponder ${ponders[0]}`,
@@ -127,7 +132,8 @@ NetworkEvents.fromClient("create_manual_change_screen", (event) => {
     screen = "PonderTagIndexScreen";
   }
   event.player.persistentData.create_manual_page_type = screen;
+  screen = screen === "PonderIndexScreen" ? "Catalog" : "Main Menu"
   event.server.runCommandSilent(
-    `title ${event.player.username} actionbar "Now manual will open ${screen}!"`,
+    `title ${event.player.username} actionbar "The Create Manual now will open the ${screen}!"`,
   );
 });

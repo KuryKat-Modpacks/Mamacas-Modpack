@@ -15,9 +15,9 @@ if (Platform.isClientEnvironment()) {
   ArchEvents.handle("ClientRawInputEvent.MouseScrolled", (event) => {
     if (
       Client.player.mainHandItem == "create:manual" &&
+      //isCrouching() doesn't work if player is flying.
       (Client.player.isCrouching() || Client.isKeyDown(340))
     ) {
-      //isCrouching() doesn't work if player is flying.
       Client.player.sendData("create_manual_change_screen", {});
       event.setResult(RESULT.interruptFalse()); //Cancel event.
       return;

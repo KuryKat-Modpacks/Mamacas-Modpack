@@ -10,11 +10,14 @@ const $PonderTagScreen = Java.loadClass(
 const $Create = Java.loadClass("com.simibubi.create.Create");
 const $AllItems = Java.loadClass("com.simibubi.create.AllItems");
 
-let check_ponder_closed = false;
+let is_ponder_closed = false;
 let no_recursion = false;
 let ponder_tag_tmp = null;
 
 function add_item(ponder_tag, item) {
+  console.log(ponder_tag)
+  console.log(item)
+  console.log(Platform.isForge())
   if (Platform.isForge()) {
     $PonderRegistry.TAGS.forTag(ponder_tag)[
       "add(net.minecraft.resources.ResourceLocation)"
@@ -31,7 +34,8 @@ function get_pivate_field(cls, field) {
 }
 
 function remove_ponder_tag(ponder_tag) {
-  let tags = get_pivate_field($PonderRegistry.TAGS, "tags"); // 'tags' is a private field of the PonderTagRegistry class that has no public deletion methods.
+  // 'tags' is a private field of the PonderTagRegistry class that has no public deletion methods.
+  let tags = get_pivate_field($PonderRegistry.TAGS, "tags");
   for (const x of tags.entries()) {
     if (x.getValue() == ponder_tag) {
       tags.remove(x.getKey(), x.getValue());
@@ -40,24 +44,35 @@ function remove_ponder_tag(ponder_tag) {
 }
 
 NetworkEvents.fromServer("open_multi_ponder", (event) => {
+  console.log(event)
+  console.log(event.data)
+  console.log(event.data["ponders"])
   let ponders = event.data["ponders"];
   let location = $Create.asResource("current_blocks");
+  console.log(location)
   let $PonderTag = Java.loadClass(
     "com.simibubi.create.foundation.ponder.PonderTag",
   ); // If we import this class at the beginning, then at the loading stage, minecraft will crash for unknown reasons.
+  console.log("DID IT GET HERE? :O")
   let ponder_tag = new $PonderTag(location).item(
     $AllItems.GOGGLES.get(),
     true,
     false,
   );
+  console.log("DID IT GET HERE? :O v2")
+  console.log(ponder_tag)
   for (const ponder of ponders) {
+    console.log("DID IT GET HERE? :O v3")
     add_item(ponder_tag, ponder.getAsString());
   }
-
+  
+  console.log("DID IT GET HERE? :O v4")
   let screen = new $PonderTagScreen(ponder_tag);
+  console.log("DID IT GET HERE? :O v5")
   Client.setCurrentScreen(screen);
+  console.log("DID IT GET HERE? :O v6")
 
-  check_ponder_closed = true;
+  is_ponder_closed = true;
   ponder_tag_tmp = ponder_tag;
 });
 
@@ -66,21 +81,21 @@ ClientEvents.tick((_event) => {
     return;
   }
   no_recursion = true;
-  if (check_ponder_closed && Client.currentScreen == null) {
+  if (is_ponder_closed && Client.currentScreen == null) {
     remove_ponder_tag(ponder_tag_tmp);
-    check_ponder_closed = false;
+    is_ponder_closed = false;
   }
   no_recursion = false;
 });
 
-NetworkEvents.fromServer("openPonderTagIndexScreen", (event) => {
+NetworkEvents.fromServer("openPonderTagIndexScreen", (_event) => {
   let screen = new $PonderTagIndexScreen();
   Client.setCurrentScreen(screen);
 });
 
 ItemEvents.tooltip((tooltip) => {
   let myMessage = Text.yellow(
-    `Right click to item from create, you want to get help, or non create to open page with all items. Works up to 64 blocks! Shift + scroll to change screen mode!`,
+    `Right-click on an item from the Create mod to get help!\nRight-click anywhere to open a page with all items.\nShift + Scroll to change screen mode!`,
   );
   tooltip.add("create:manual", [myMessage]);
 });
@@ -105,6 +120,6 @@ ClientEvents.highPriorityAssets((event) => {
   event.addLang("create.ponder.tag.current_blocks", "Current Blocks");
   event.addLang(
     "create.ponder.tag.current_blocks.description",
-    "The item you clicked on, has several Ponder pages:",
+    "The item you clicked on has several Ponder pages:",
   );
 });
